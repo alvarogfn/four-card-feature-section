@@ -1,0 +1,23 @@
+// variables
+@import '1_settings/_1_settings';
+
+// mixins, functions, animations...
+@import '2_tools/_2_tools';
+
+// selector * and css resets
+@import '3_generic/_3_generic';
+
+// tag selectors
+@import '4_base/_4_base';
+
+// interface layout
+
+@import '5_objects/_5_objects';
+
+// blocks layouts and elements layouts
+
+@import '6_components/_6_components';
+
+// credits!
+
+// @import '7_trumps/_7_trumps.scss';

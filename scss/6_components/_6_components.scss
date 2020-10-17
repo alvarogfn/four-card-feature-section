@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+
+    &__about {
+        line-height: 1.5rem;
+        margin-bottom: 50px;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 400px;
+    
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+
+        border-radius: 5px;
+        text-align: left;
+        padding: 1.5rem 2rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 20px 25px rgba($color: $Very-Dark-Blue, $alpha: .25);
+
+        &--cyan {
+            border-top: .25rem solid $Cyan;
+        }
+
+        &--red {
+            border-top: .25rem solid $Red;
+        }
+
+        &--orange {
+            border-top: .25rem solid $Orange;
+        }
+
+        &--blue {
+            border-top: .25rem solid $Blue;
+        }
+    }
+
+
+
+    &__text {
+        margin-top: .5rem;
+        line-height: 1.5rem;
+    }
+
+    &__img {
+        align-self: flex-end;
+        margin-top: 2rem;
+    }
+}

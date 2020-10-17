@@ -1,0 +1,88 @@
+///////////////////* ONLY CREDITS *////////////////////////////////    
+
+// .attribution font
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+    // font-family: 'Source Code Pro', monospace;
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+    width: max-content;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: right;
+    row-gap: .5rem;
+
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    
+    opacity: .5;
+
+    margin: 1rem;
+
+    .challenge, .my {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: right;
+        width: max-content;
+
+        &__img {
+            width: 32px;
+            border-radius: 10%;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .challenge__by, .my__coded {
+        margin-right: .5rem;
+        width: max-content;
+    }
+
+    .challenge {
+        grid-row: 1 / 2;
+        &__img {
+            background-color: white;
+        }
+    }
+
+    .my {
+        grid-row: 2 / 3;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .attribution {opacity: 1;}
+
+    .challenge, .my {
+        &:hover {
+            .challenge__by, .my__coded {
+                display: none;
+            }
+
+            .challenge__img, .my__img {
+                filter: grayscale(0%) opacity(100%);
+                transform: scale(1.1);
+            }
+        }
+        
+        &__img {
+            filter: grayscale(100%) opacity(50%);
+            transition: 400ms;
+        }
+    }
+    .challenge__by, .my__coded {
+        opacity: 0;
+        transition: 400ms opacity;
+    }
+}

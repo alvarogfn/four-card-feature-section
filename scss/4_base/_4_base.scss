@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+// font import //
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    // font-family: 'Poppins', sans-serif;
+
+body {
+    background-color: $Very-Light-Gray;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 1400px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: $Very-Dark-Blue;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: .9rem;
+    color: $Grayish-Blue;
+}
+
+h4 {
+    color: $Very-Dark-Blue;
+    font-size: 1.3rem;
+}
+
+p {
+    color: $Grayish-Blue;
+    font-size: .8rem;
+}
