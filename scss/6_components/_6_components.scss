@@ -19,6 +19,10 @@
 .cards {
     display: flex;
     flex-flow: row wrap;
+
+    &__acessibilityTitle {
+        text-indent: -9999px;
+    }
     
     &__item {
         flex-basis: 250px;
