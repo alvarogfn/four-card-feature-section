@@ -471,9 +471,9 @@ p {
   border-radius: 5px;
   text-align: left;
   padding: 1.5rem 2rem 1.5rem;
-  margin-bottom: 1rem;
-  -webkit-box-shadow: 0 20px 25px rgba(76, 78, 97, 0.25);
-          box-shadow: 0 20px 25px rgba(76, 78, 97, 0.25);
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0 10px 20px rgba(194, 213, 223, 0.75);
+          box-shadow: 0 10px 20px rgba(194, 213, 223, 0.75);
 }
 
 @media screen and (min-width: 600px) {
