@@ -36,12 +36,15 @@
     justify-content: center;
 
     text-transform: uppercase;
+
     border-radius: 5px;
-    box-shadow: 0 20px 25px rgba($color: $Very-Dark-Blue, $alpha: .25);
-    background-color: $Very-Dark-Blue;
     border-top: 5px solid $Grayish-Blue;
+
+    box-shadow: 0 20px 25px rgba($color: $Very-Dark-Blue, $alpha: .25);
+
+    background-color: $Very-Dark-Blue;
     color: $Grayish-Blue;
-    text-align: left;
+    
 
     margin: 5rem 0 2.5rem;
     padding: .75rem 1rem;
@@ -67,7 +70,7 @@
     }
     
     &__me {
-        animation: colors 10s alternate infinite;
+        animation: colors 5s alternate infinite;
     }
 
     &__link {
@@ -79,12 +82,16 @@
 
     &__img {
         filter: grayscale(100%);
+
         width: 35px;
+
         transition: 400ms transform;
+
         &:hover {
             transform: scale(1.1);
             filter: grayscale(0%);
         }
+
     }
 }
 

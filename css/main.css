@@ -619,12 +619,11 @@ p {
           justify-content: center;
   text-transform: uppercase;
   border-radius: 5px;
+  border-top: 5px solid #a3a5ae;
   -webkit-box-shadow: 0 20px 25px rgba(76, 78, 97, 0.25);
           box-shadow: 0 20px 25px rgba(76, 78, 97, 0.25);
   background-color: #4c4e61;
-  border-top: 5px solid #a3a5ae;
   color: #a3a5ae;
-  text-align: left;
   margin: 5rem 0 2.5rem;
   padding: .75rem 1rem;
 }
@@ -651,8 +650,8 @@ p {
 }
 
 .attribution__me {
-  -webkit-animation: colors 10s alternate infinite;
-          animation: colors 10s alternate infinite;
+  -webkit-animation: colors 5s alternate infinite;
+          animation: colors 5s alternate infinite;
 }
 
 .attribution__link {

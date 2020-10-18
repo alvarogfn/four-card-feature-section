@@ -35,7 +35,9 @@
         flex-flow: column nowrap;
 
         border-radius: 5px;
+
         text-align: left;
+
         padding: 1.5rem 2rem 1.5rem;
         margin-bottom: 1.5rem;
 
@@ -47,21 +49,13 @@
 
         box-shadow: 0 10px 20px rgba($color: #c2d5df, $alpha: .75);
 
-        &--cyan {
-            border-top: .25rem solid $Cyan;
-        }
+        &--cyan { border-top: .25rem solid $Cyan; }
 
-        &--red {
-            border-top: .25rem solid $Red;
-        }
+        &--red { border-top: .25rem solid $Red; }
 
-        &--orange {
-            border-top: .25rem solid $Orange;
-        }
+        &--orange { border-top: .25rem solid $Orange; }
 
-        &--blue {
-            border-top: .25rem solid $Blue;
-        }
+        &--blue { border-top: .25rem solid $Blue; }
     }
 
     &__text {
@@ -90,6 +84,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 135px);
+
         margin: 0 1rem;
         
 
@@ -106,7 +101,6 @@
                 grid-column: 2 / 3;
                 grid-row: 3 / 5;
             }
-
             &--blue {
                 grid-column: 3 / 4;
                 grid-row: 2 / 4;
