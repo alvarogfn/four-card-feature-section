@@ -3,12 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
     // font-family: 'Source Code Pro', monospace;
 
+@keyframes colors {
+    0% {
+        color: $Grayish-Blue;
+    }
+
+    25% {
+        color: $Blue;
+    }
+
+    50% {
+        color: $Cyan;
+    }
+
+    75% {
+        color: $Orange;
+    }
+
+    100% {
+        color: $Very-Light-Gray;
+    }
+}
+
 .attribution {
     flex-basis: content;
 
     display: grid;
     grid-template-columns: 88% 12%;
-    grid-template-rows: 100% 100%;
+    grid-template-rows: 1fr 1fr;
 
     align-items: center;
     justify-content: center;
@@ -43,6 +65,10 @@
 
         margin-right: .75rem;
     }
+    
+    &__me {
+        animation: colors 10s alternate infinite;
+    }
 
     &__link {
         grid-column: 2 / 3;
@@ -54,5 +80,20 @@
     &__img {
         filter: grayscale(100%);
         width: 35px;
+        transition: 400ms transform;
+        &:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+    }
+}
+
+@include mediaquery(1400px) {
+    .attribution {
+        flex-basis: 20%;
+
+        position: absolute;
+        right: 20px;
+        bottom: -20px;
     }
 }
