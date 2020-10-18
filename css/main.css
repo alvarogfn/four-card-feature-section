@@ -452,7 +452,7 @@ p {
 }
 
 .cards__acessibilityTitle {
-  text-indent: -9999px;
+  display: none;
 }
 
 .cards__item {

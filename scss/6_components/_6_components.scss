@@ -21,7 +21,7 @@
     flex-flow: row wrap;
 
     &__acessibilityTitle {
-        text-indent: -9999px;
+        display: none;
     }
     
     &__item {
